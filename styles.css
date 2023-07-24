@@ -129,8 +129,7 @@ main h2 {
     background-color: var(--primary-light);
     box-sizing: border-box;
     grid-template: auto / auto;
-    gap: 20px;
-    padding: 30px 20px;
+    padding: 10px 20px;
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
 }
@@ -139,6 +138,13 @@ main h2 {
     display: grid;
     grid-template: auto / 1fr;
     gap: var(--gap);
+}
+
+.side-panel-main .content>div:not(:last-child) {
+    border-bottom: 1px solid var(--secondary-color);
+}
+.side-panel-main .content>div {
+    padding: 20px 0;
 }
 
 main {
