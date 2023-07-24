@@ -107,7 +107,7 @@ label {
 }
 
 #site_search {
-    margin: var(--align-search) 50px var(--align-search) 0;
+    margin: var(--align-search) 50px var(--align-search) 10px;
     border: 0;
     border-radius: 64px;
     background-color: #85010134;
