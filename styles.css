@@ -3,6 +3,8 @@
     --gap: 20px;
     --background-color: rgba(0, 0, 0, 0.068);
     --align-search: 5px;
+    --theme-color: #f2deb0;
+    --theme-color-light: #f2deb073; 
 }
 
 body {
@@ -25,7 +27,7 @@ a {
     height: 100%;
     gap: 40px;
     padding: 20px 40px;
-    background-color: #FDFCF5;
+    background-color: var(--theme-color);
     align-items: stretch;
     grid-template: auto 1fr / 1fr;
 }
@@ -57,11 +59,12 @@ main h2 {
 .announcements>.content,
 .trending>.content {
     display: grid;
-    background-color: white;
+    background-color: var(--theme-color-light);
     box-sizing: border-box;
     grid-template: auto / auto;
     gap: 20px;
     padding: 9px 9px;
+    border: 2px solid var(--theme-color);
     border-radius: var(--border-radius);
 }
 
@@ -76,6 +79,9 @@ main {
     gap: var(--gap);
     align-items: first baseline;
     margin-right: var(--gap);
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 h2 {
@@ -93,9 +99,9 @@ h1 {
     box-sizing: border-box;
     height: 200px;
     border-radius: 10px;
-    border-left: 10px solid #850101;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.075);
-    background-color: white;
+    border: 2px solid var(--theme-color);
+    border-left: 10px solid var(--theme-color);
+    background-color: var(--theme-color-light);
 }
 
 header>:nth-child(1) {
@@ -108,10 +114,10 @@ label {
 
 #site_search {
     margin: var(--align-search) 50px var(--align-search) 10px;
-    border: 0;
+    border: 1px solid var(--theme-color);
     border-radius: 64px;
-    background-color: #85010134;
-    height: 24px;
+    background-color: var(--theme-color-light);
+    height: 29px;
     /* align-self: start; */
 }
 
@@ -131,7 +137,8 @@ header {
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.137);
     padding: 12px 20px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 .links {
