@@ -119,11 +119,6 @@ section.content {
     grid-template-columns: repeat(auto-fit, minmax(341px, 1fr));
 }
 
-.your-projects {
-    flex-grow: 1;
-    color: var(--secondary-color);
-}
-
 main h2 {
     margin-bottom: 10px;
 }
@@ -135,7 +130,7 @@ main h2 {
     box-sizing: border-box;
     grid-template: auto / auto;
     gap: 20px;
-    padding: 9px 9px;
+    padding: 30px 20px;
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
 }
@@ -144,7 +139,6 @@ main h2 {
     display: grid;
     grid-template: auto / 1fr;
     gap: var(--gap);
-    color: var(--secondary-color);
 }
 
 main {
@@ -155,12 +149,18 @@ main {
     padding: 40px 20px;
     background-color: var(--background-color);
     border-radius: 20px;
+    color: var(--secondary-color);
 }
 
 h2 {
     grid-column: 1 / -1;
     font-weight: bold;
     font-size: 25px;
+}
+
+.your-projects {
+    flex-grow: 1;
+    font-size: 19px;
 }
 
 .your-projects div:not(.content){
@@ -186,7 +186,6 @@ h2 {
 .announcements h4,
 .trending h4 {
     font-family: 'caviar_dreamsbold';
-    font-size: 19px;
 }
 
 .your-projects p,
