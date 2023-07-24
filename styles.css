@@ -1,17 +1,28 @@
+@font-face {font-family: 'glockspiel';
+    src: url(./fonts/LT\ Glockenspiel\ Black.woff) format(woff),
+         url(./fonts/LT\ Glockenspiel\ Black.woff2) format(woff2);
+}
+
+@font-face {font-family: 'cake';
+    src: url(./fonts/cake_mania-webfont.woff) format(woff),
+         url(./fonts/cake_mania-webfont.woff2) format(woff2);
+}
+
 :root {
     --border-radius: 10px;
     --gap: 20px;
-    --background-color: rgba(0, 0, 0, 0.068);
+    --background-color: rgb(255 255 255 / 85%);
     --align-search: 5px;
-    --theme-color: #f2deb0;
-    --theme-color-light: #f2deb073; 
+    --primary-color: #f2deb0;
+    --primary-light: #f2deb073; 
+    --secondary-color: #0B0033;
 }
 
 body {
     display: grid;
     grid-template: auto 1fr / 1fr 6fr;
     align-items: start;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     min-height: 100vh;
 /*    background-image: url(./imgs/pexels-david-bartus-1545345.jpg);
     background-size: 100vw; */
@@ -20,6 +31,13 @@ body {
 a {
     display: block;
     text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-family: 'glockspiel';
+    letter-spacing: 1px;
+    color: var(--secondary-color);
 }
 
 .dashboard {
@@ -27,9 +45,23 @@ a {
     height: 100%;
     gap: 40px;
     padding: 20px 40px;
-    background-color: var(--theme-color);
     align-items: stretch;
     grid-template: auto 1fr / 1fr;
+    background-color: var(--secondary-color);
+}
+
+
+.dashboard>:first-child {
+    font-size: 40px;
+    color: white;
+    font-family: 'glockspiel';
+}
+
+.hello-message :first-child {
+    font-family: 'cake';
+    color: var(--secondary-color);
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
 section {
@@ -59,12 +91,12 @@ main h2 {
 .announcements>.content,
 .trending>.content {
     display: grid;
-    background-color: var(--theme-color-light);
+    background-color: var(--primary-light);
     box-sizing: border-box;
     grid-template: auto / auto;
     gap: 20px;
     padding: 9px 9px;
-    border: 2px solid var(--theme-color);
+    border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
 }
 
@@ -80,7 +112,7 @@ main {
     align-items: first baseline;
     margin-right: var(--gap);
     padding: 40px 20px;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -90,18 +122,13 @@ h2 {
     font-size: 25px;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 30px;
-}
-
 .your-projects div:not(.content){
     box-sizing: border-box;
     height: 200px;
     border-radius: 10px;
-    border: 2px solid var(--theme-color);
-    border-left: 10px solid var(--theme-color);
-    background-color: var(--theme-color-light);
+    border-left: 10px solid var(--primary-color);
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062)
 }
 
 header>:nth-child(1) {
@@ -114,9 +141,9 @@ label {
 
 #site_search {
     margin: var(--align-search) 50px var(--align-search) 10px;
-    border: 1px solid var(--theme-color);
+    border: 1px solid var(--primary-color);
     border-radius: 64px;
-    background-color: var(--theme-color-light);
+    background-color: var(--primary-light);
     height: 29px;
     /* align-self: start; */
 }
