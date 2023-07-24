@@ -10,69 +10,92 @@
 </head>
 
 <body>
-    <h1>Dashboard</h1>
-    <p class="search-item">
-        <label for="site_search"></label>
-        <input type="search" id="site_search" name="search_item" spellcheck="true" />
-    </p>
-    <section class="dashboard-links">
-        <h4><a href="">link number 1</a></h4>
-        <h4><a href="">link number 2</a></h4>
-        <h4><a href="">link number 3</a></h4>
-        <h4><a href="">link number 4</a></h4>
-        <h4><a href="">link number 5</a></h4>
+    <section class="dashboard">
+        <h1>Dashboard</h1>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">Profile</a>
+            <a href="">Messages</a>
+            <a href="">History</a>
+            <a href="">Tasks</a>
+        </div>
     </section>
+    <header>
+        <p class="search-bar">
+            <label for="site_search">
+                <img src="./imgs/magnify.svg" />
+            </label>
+            <input type="search" id="site_search" name="search_item" spellcheck="true" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>bell-outline</title>
+                <path
+                    d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" />
+            </svg>
+            <img src="./imgs/profile.png" class="profile" style="width: 48px;" />
+            <span>Vatsal</span>
+        </p>
+        <img src="./imgs/profile.png" class="profile" style="width: 95px;" />
+        <span class="hello-message">
+            <h4>Hi there</h4>
+            <h2>vavyVatsal (@vatsal)</h2>
+        </span>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+    </header>
     <section class="content">
-        <header>
-            <p>your name</p>
-        </header>
         <main>
             <section class="your-projects">
                 <h2>Your projects</h2>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione tempora quasi maxime odit
-                    laudantium possimus excepturi ducimus, rerum sequi repudiandae sapiente similique commodi beatae
-                    totam reprehenderit? Deleniti maxime pariatur quisquam.</div>
-                <div>Voluptas provident earum consequatur dolore hic sequi eveniet obcaecati vitae, aut molestiae
-                    voluptatum velit, nulla non aperiam unde, tempore consequuntur commodi. Harum eum voluptate numquam,
-                    fugit facere temporibus ea ex!</div>
-                <div>Cupiditate qui dolorum nobis libero in inventore vero earum excepturi odit maiores nostrum officia
-                    blanditiis magni quod facilis aliquid omnis deserunt commodi, culpa a labore ea? Atque iure ipsum
-                    tempora!</div>
-                <div>Adipisci corporis debitis facilis eligendi, dolorum vel laboriosam at, consectetur nostrum
-                    distinctio fugit? Amet velit rem ipsa minus sapiente, repudiandae repellendus officia odit magnam
-                    aliquam at deleniti nihil inventore mollitia.</div>
-                <div>Qui modi hic officia assumenda ab sit aut corrupti doloremque dolore alias molestias nemo autem,
-                    nesciunt amet consequuntur saepe. Aliquid vero nemo, saepe enim veritatis nulla amet repellat fugiat
-                    sed.</div>
-                <div>Incidunt facere repellat consequuntur ea ipsum impedit amet ipsa. Sapiente eaque dignissimos facere
-                    quo earum odit molestias! Aperiam dolores minima ipsam, molestias nesciunt qui quam tempora, totam
-                    libero sed veniam!</div>
-                <div>Fuga impedit fugit cupiditate amet? Dicta officia dolores accusantium quidem assumenda neque fuga
-                    voluptate incidunt tempore enim voluptatibus ducimus sapiente expedita, dolorum quia minus, at unde
-                    sint eos rem eius.</div>
-                <div>Non rerum tenetur dignissimos est quidem iste! Esse est at sit fugiat. Natus sint distinctio
-                    explicabo temporibus, ex voluptate laboriosam ea, rem blanditiis eaque animi, sunt pariatur quisquam
-                    placeat aspernatur?</div>
-                <div>Doloribus aspernatur ducimus commodi totam, autem cupiditate neque pariatur minima facere dolorem
-                    error quasi, exercitationem enim doloremque, inventore officiis odio nobis consectetur. Repellendus
-                    vel illum, atque ea quas minima ullam.</div>
-                <div>Doloremque, dignissimos amet provident quas, officiis ducimus id eligendi consectetur voluptatibus
-                    temporibus aperiam! Consectetur quas numquam non, repellat corrupti ducimus culpa, rerum sunt
-                    quibusdam omnis necessitatibus deleniti odio vel doloremque!</div>
+                <div class="content">
+                    <div>
+                        <h4>Sign Up</h4>
+                        <p>This is a sign-up page</p>
+                    </div>
+                    <div>
+                        <h4>Arithmatix</h4>
+                        <p>Checkout this calculator</p>
+                    </div>
+                    <div>
+                        <h4>Rock Paper Scissors</h4>
+                        <p>Play a game of rock paper and scissors against the computer</p>
+                    </div>
+                </div>
             </section>
             <div class="side-panel-main">
                 <section class="announcements">
                     <h2>Announcements</h2>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit eum illo asperiores et blanditiis eaque, sed tenetur rerum molestias nulla iusto, deleniti ab hic voluptatem! Illo qui quis blanditiis!</div>
-                    <div>Labore facere, doloribus modi illo doloremque esse quis, nemo excepturi dolores possimus asperiores. Perferendis fugiat tempore cum sit sapiente dolore vel, saepe id earum quam obcaecati perspiciatis pariatur atque ut!</div>
-                    <div>Placeat fuga sequi provident, enim inventore laboriosam rem quo, in accusamus magni, ex nostrum debitis cumque praesentium minus eaque commodi! Ipsum optio eius quisquam quam dicta. Sapiente nam corrupti ex.</div>
+                    <div class="content">
+                        <div>
+                            <h4>Site Maintenance</h4>
+                            <p>Please keep maintaining your site</p>
+                        </div>
+                        <div>
+                            <h4>Community Share Day</h4>
+                            <p>share your code</p>
+                        </div>
+                        <div>
+                            <h4>Updated Privacy Policy</h4>
+                            <p>update your policy</p>
+                        </div>
+                    </div>
                 </section>
                 <section class="trending">
                     <h2>Trending</h2>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, laborum error adipisci rem modi pariatur. Maiores qui, rerum similique modi alias dolorem atque ipsum, voluptatibus nemo obcaecati non tenetur? Reprehenderit.</div>
-                    <div>Quos nesciunt ullam dolorem sed temporibus aliquid illum impedit, pariatur officiis voluptatum, nobis, quia odio aperiam voluptates est architecto magnam possimus dolorum commodi corporis repudiandae. Facere, consequuntur aut. Consectetur, commodi?</div>
-                    <div>Nam dolorum magnam accusamus repellendus libero temporibus unde quod dolor provident harum, odio aspernatur soluta quam nisi consequatur ipsum autem vel? Porro praesentium alias, aliquam iusto illo dolorum voluptatem laudantium!</div>
-                    <div>Placeat, ut odit quod magnam obcaecati quasi? Labore dolorem eaque ducimus repellendus quidem consectetur beatae aliquam itaque expedita est dolores mollitia quam, nulla temporibus rem accusantium, doloribus iste illum ipsum!</div>
+                    <div class="content">
+                        <div>
+                            <h4>@tegan</h4>
+                            <p>world peace builder</p>
+                        </div>
+                        <div>
+                            <h4>@morgan</h4>
+                            <p>super cool project</p>
+                        </div>
+                        <div>
+                            <h4>@kendall</h4>
+                            <p>life changing app</p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
