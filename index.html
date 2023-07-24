@@ -51,26 +51,50 @@
                     <div>
                         <h4>Sign Up</h4>
                         <p>This is a sign-up page</p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/sign-up-form/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/sign-up-form" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                     <div>
                         <h4>Arithmatix</h4>
                         <p>Checkout this calculator</p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/calculator/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/calculator" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                     <div>
                         <h4>Rock Paper Scissors</h4>
                         <p>Play a game of rock paper and scissors against the computer</p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/rock-Paper-Scissors/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/rock-Paper-Scissors" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                     <div>
                         <h4>Etch a sketch</h4>
                         <p>Draw away in a Digital Stylus</p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/etch-a-sketch/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/etch-a-sketch" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                     <div>
                         <h4>Landing Page</h4>
                         <p>My first every landing page<p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/landing-page/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/landing-page" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                     <div>
                         <h4>Odin recipes</h4>
                         <p>Read about delicious recipes<p>
+                        <p id="page-links">
+                            <a href="https://rajvatsal.github.io/odin-recipes/" target="_blank"><img src="./imgs/open-in-new.svg"/></a>
+                            <a href="https://github.com/rajvatsal/odin-recipes" target="_blank"><img src="./imgs/github.svg"/></a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -112,6 +136,29 @@
             </div>
         </main>
     </section>
+<script>
+    const divs = document.querySelectorAll('.your-projects .content div');
+    let target = 0;
+    divs.forEach(div => div.addEventListener('mouseover', changeColor));
+    function changeColor(e) {
+        if(e.target.tagName !== 'DIV') return
+        target = e.target;
+        let git = e.target.querySelector('a:last-child>img');
+        let link = e.target.querySelector('a:first-child>img')
+        git.src = './imgs/github-white.svg';
+        link.src = './imgs/link-white.svg';
+    }
+
+    divs.forEach(div => div.addEventListener('mouseleave', revertColor));
+    function revertColor(e) {
+        if(e.target.tagName !== 'DIV') return
+        let git = target.querySelector('a:nth-child(2)>img')
+        let link = e.target.querySelector('a:first-child>img')
+        git.src = './imgs/github.svg';
+        link.src = './imgs/open-in-new.svg';
+    }
+
+</script>
 </body>
 
 </html>

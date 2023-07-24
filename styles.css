@@ -177,15 +177,26 @@ h2 {
     background-color: white;
     padding: 30px 20px;
     transition: all 100ms ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .your-projects div:not(.content):hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
     background-color: #0b0033a1;
     border-left: 10px solid var(--secondary-color);
     color: white;
+}
+
+#page-links {
+    display: flex;
+    justify-self: last baseline;
+    align-self: last baseline;
+    gap: 10px;
+    fill: white;
+    stroke: white;
 }
 
 .your-projects h4,
@@ -250,6 +261,7 @@ img,
 svg {
     width: 23px;
     cursor: pointer;
+    transition: all 10s ease-in-out;
 }
 
 header {
