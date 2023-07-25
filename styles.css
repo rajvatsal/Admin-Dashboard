@@ -89,7 +89,6 @@ h2 {
     background-color: var(--secondary-color);
 }
 
-
 .dashboard>:first-child {
     font-size: 40px;
     color: white;
@@ -285,4 +284,22 @@ button:hover {
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.315);
+}
+
+@media only screen and (max-width: 800px) {
+    .dashboard,
+    div.side-panel-main {
+        display: none;
+    }
+    body {
+        grid-template: auto 1fr / 1fr;
+    }
+    header,
+    main {
+        border-radius: 0;
+        margin: 0 0;
+    }
+    section.content {
+        padding: 0 0;
+    }
 }
