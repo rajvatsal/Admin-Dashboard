@@ -111,7 +111,7 @@ section.content {
     display: grid;
     gap: var(--gap);
     border-radius: var(--border-radius);
-    grid-template-columns: repeat(auto-fit, minmax(341px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 main h2 {
