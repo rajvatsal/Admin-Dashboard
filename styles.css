@@ -53,14 +53,14 @@
     --gap: 20px;
     --background-color: rgb(255 255 255 / 85%);
     --align-search: 5px;
-    --primary-color: #11270B;
-    --primary-light: #11270B73;
-    --secondary-light: #11270Ba1;
-    --secondary-color: #11270B;
+    --primary-color: #BF4E30;
+    --primary-light: #BF4E3073;
+    --secondary-light: #BF4E30bd;
+    --secondary-color: #BF4E30;
     --text-color: white;
     --text-color-2: #0b0033;
-    --hello-color: #11270B;
-    --h2-color: #11270B;
+    --hello-color: black;
+    --h2-color: black;
 }
 
 body {
