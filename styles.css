@@ -53,11 +53,14 @@
     --gap: 20px;
     --background-color: rgb(255 255 255 / 85%);
     --align-search: 5px;
-    --primary-color: #f2deb0;
-    --primary-light: #f2deb073;
-    --secondary-color: #0B0033;
+    --primary-color: #11270B;
+    --primary-light: #11270B73;
+    --secondary-light: #11270Ba1;
+    --secondary-color: #11270B;
     --text-color: white;
     --text-color-2: #0b0033;
+    --hello-color: #11270B;
+    --h2-color: #11270B;
 }
 
 body {
@@ -80,7 +83,7 @@ a {
 h2 {
     font-family: 'glockspiel';
     letter-spacing: 1px;
-    color: var(--text-color-2);
+    color: var(--h2-color);
     grid-column: 1 / -1;
     font-weight: bold;
     font-size: 25px;
@@ -172,7 +175,7 @@ header {
 
 .hello-message :first-child {
     font-family: 'cake';
-    color: var(--text-color-2);
+    color: var(--hello-color);
     font-size: clamp(10px, 3.5vw, 16px);
     letter-spacing: 0.5px;
 }
@@ -180,6 +183,7 @@ header {
 .hello-message :nth-child(2) {
     font-weight: bold;
     font-size: clamp(16px, 3.5vw, 25px);
+    color: var(--hello-color);
 }
 
 button {
@@ -242,7 +246,7 @@ main h2 {
     transform: scale(1.09);
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
-    background-color: #0b0033a1;
+    background-color: var(--secondary-light);
     border-left: 10px solid var(--secondary-color);
     color: var(--text-color);
 }
