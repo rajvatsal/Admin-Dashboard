@@ -56,6 +56,8 @@
     --primary-color: #f2deb0;
     --primary-light: #f2deb073;
     --secondary-color: #0B0033;
+    --text-color: white;
+    --text-color-2: #0b0033;
 }
 
 body {
@@ -71,14 +73,14 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-family: 'caviar_dreamsregular'
 }
 
 h2 {
     font-family: 'glockspiel';
     letter-spacing: 1px;
-    color: var(--secondary-color);
+    color: var(--text-color-2);
     grid-column: 1 / -1;
     font-weight: bold;
     font-size: 25px;
@@ -105,7 +107,7 @@ section.content {
 
 .dashboard>:first-child {
     font-size: 40px;
-    color: white;
+    color: var(--text-color);
     font-family: 'glockspiel';
 }
 
@@ -170,7 +172,7 @@ header {
 
 .hello-message :first-child {
     font-family: 'cake';
-    color: var(--secondary-color);
+    color: var(--text-color-2);
     font-size: clamp(10px, 3.5vw, 16px);
     letter-spacing: 0.5px;
 }
@@ -185,7 +187,7 @@ button {
     padding: 8px 20px;
     border-radius: 50px;
     border: 0;
-    color: white;
+    color: var(--text-color);
     font-family: 'caviar_dreamsbold';
     background-color: var(--secondary-color);
     transition: all 100ms ease-in-out;
@@ -205,7 +207,7 @@ main {
     padding: 40px 20px;
     background-color: var(--background-color);
     border-radius: 20px;
-    color: var(--secondary-color);
+    color: var(--text-color-2);
 }
 
 main h2 {
@@ -242,7 +244,7 @@ main h2 {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
     background-color: #0b0033a1;
     border-left: 10px solid var(--secondary-color);
-    color: white;
+    color: var(--text-color);
 }
 
 #page-links {
