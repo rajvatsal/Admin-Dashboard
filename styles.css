@@ -173,7 +173,6 @@ img,
 svg {
     width: 23px;
     cursor: pointer;
-    transition: all 10s ease-in-out;
 }
 
 header>:nth-child(1) {
@@ -331,11 +330,11 @@ main h2 {
 
 .content .mask {
     width: 100%;
-    height: 100%;
+    height: calc(100% + 2px);;
     background-color: #2b1931c2;
     position: absolute;
     z-index: 0; 
-    top: 0;
+    top: -1px;
     margin: 0px 0px;
     left: 0;
     margin-top: 0;
@@ -344,7 +343,7 @@ main h2 {
     transition: all 100ms ease-in-out;
 
     -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
-            transparent 50px,
-            black 500px
+            transparent 4px,
+            black 400px
     );
 }
