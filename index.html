@@ -170,20 +170,6 @@
         link.src = './imgs/open-in-new.svg';
     }
 */
-
-// Spotlight effect
-const masks = document.querySelectorAll('.mask');
-
-masks.forEach(mask => mask.addEventListener('pointermove', (pos) => {
-    let rect = pos.target.getBoundingClientRect(); //Get the position and size of the element relative to view port
-    let x = pos.clientX - rect.left;
-    let y = pos.clientY - rect.top;
-    x = (x / pos.target.offsetWidth * 100);
-    y = (y / pos.target.offsetHeight * 100);
-
-    mask.style.setProperty('--mouse-x', x + '%');
-    mask.style.setProperty('--mouse-y', y + '%'); 
-}));
 </script>
 </body>
 
