@@ -63,6 +63,8 @@
     --h2-color: #EBE2F3;
     --hover-color: black;
     --border-left: #CBBAED;
+    --mouse-x: 100%;
+    --mouse-y: 100%;
 }
 
 body {
@@ -241,11 +243,12 @@ main h2 {
     height: 150px;
     border-radius: 10px;
     border-left: 10px solid var(--secondary-color);
-    background-color: #cbbaed22;
+    background-color: #CBBAED99;
     padding: 30px 20px;
     transition: all 100ms ease-in-out;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .your-projects div:not(.content):hover {
@@ -294,6 +297,7 @@ main h2 {
 .trending h4 {
     font-family: 'caviar_dreamsbold';
     color: white;
+    z-index: 0;
 }
 
 .your-projects p,
@@ -303,6 +307,7 @@ main h2 {
     font-size: 15px;
     margin-top: 10px;
     color: white;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 800px) {
@@ -322,4 +327,33 @@ main h2 {
     input#site_search {
         margin-right: 0px;
     }
+}
+
+.content .mask {
+    width: 100%;
+    height: 100%;
+    background-color: #2b193163;
+    ;
+    position: absolute;
+    z-index: 1; 
+    top: 0;
+    margin: 0px 0px;
+    left: 0;
+    margin-top: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 100ms ease-in-out;
+}
+
+.content .mask:hover {
+    mask: radial-gradient(
+       circle at var(--mouse-x) var(--mouse-y),
+       transparent 40px,
+       black 150px
+    );
+
+    -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            transparent 50px,
+            black 150px
+    );
 }
