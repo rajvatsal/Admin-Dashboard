@@ -229,7 +229,7 @@ main h2 {
     display: grid;
     gap: var(--gap);
     border-radius: var(--border-radius);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .your-projects {
@@ -325,6 +325,17 @@ main h2 {
 
     input#site_search {
         margin-right: 0px;
+    }
+    header {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .search-bar>img,
+    .search-bar>span,
+    button {
+        display: none;
     }
 }
 
