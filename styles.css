@@ -333,7 +333,6 @@ main h2 {
     width: 100%;
     height: 100%;
     background-color: #2b193163;
-    ;
     position: absolute;
     z-index: 1; 
     top: 0;
@@ -354,6 +353,6 @@ main h2 {
 
     -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
             transparent 50px,
-            black 150px
+            black 500px
     );
 }
