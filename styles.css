@@ -341,8 +341,12 @@ main h2 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: all 100ms ease-in-out;
-
     -webkit-mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
+            transparent 4px,
+            black 400px
+    );
+
+    mask: radial-gradient(circle at var(--mouse-x) var(--mouse-y),
             transparent 4px,
             black 400px
     );
