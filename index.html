@@ -55,7 +55,6 @@
                 <h2>Your projects</h2>
                 <div class="content">
                     <div>
-                        <p class="mask"></p>
                         <h4>Sign Up</h4>
                         <p>This is a sign-up page</p>
                         <p id="page-links">
@@ -64,7 +63,6 @@
                         </p>
                     </div>
                     <div>
-                        <p class="mask"></p>
                         <h4>Arithmatix</h4>
                         <p>Checkout this calculator</p>
                         <p id="page-links">
@@ -73,7 +71,6 @@
                         </p>
                     </div>
                     <div>
-                        <p class="mask"></p>
                         <h4>Rock Paper Scissors</h4>
                         <p>Play a game of rock paper and scissors against the computer</p>
                         <p id="page-links">
@@ -82,7 +79,6 @@
                         </p>
                     </div>
                     <div>
-                        <p class="mask"></p>
                         <h4>Etch a sketch</h4>
                         <p>Draw away in a Digital Stylus</p>
                         <p id="page-links">
@@ -91,7 +87,6 @@
                         </p>
                     </div>
                     <div>
-                        <p class="mask"></p>
                         <h4>Landing Page</h4>
                         <p>My first every landing page<p>
                         <p id="page-links">
@@ -100,7 +95,6 @@
                         </p>
                     </div>
                     <div>
-                        <p class="mask"></p>
                         <h4>Odin recipes</h4>
                         <p>Read about delicious recipes<p>
                         <p id="page-links">
@@ -170,6 +164,18 @@
         link.src = './imgs/open-in-new.svg';
     }
 */
+const projects = document.querySelectorAll('.your-projects div:not(.content)');
+
+projects.forEach(project => project.addEventListener('pointermove', (pos) => {
+    let rect = pos.currentTarget.getBoundingClientRect(); //Get the position and size of the element relative to view port
+    let x = pos.clientX - rect.left - 20; // -20 cuz it's a little too right from the center of the cursor
+    let y = pos.clientY - rect.top;
+    x = (x / pos.currentTarget.offsetWidth * 100); // Divide by width of the  element to get in percent
+    y = (y / pos.currentTarget.offsetHeight * 100);
+
+    project.style.setProperty('--mouse-x', x + '%');
+    project.style.setProperty('--mouse-y', y + '%'); 
+}));
 </script>
 </body>
 
