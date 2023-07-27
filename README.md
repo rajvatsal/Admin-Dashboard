@@ -11,7 +11,7 @@
     keep adding new project links that I will make in the future.
     <h2> I am planning to add the following in the future.</h2>
         <ul>
-            <li>Fully functioning Spotlight effect.</li>
+            <li><s>Fully functioning Spotlight effect.</s></li>
             <li>Search utility</li>
             <li>Ability to see your login info</li>
             <li>Tabs on Dashboard actually link to something</li>
