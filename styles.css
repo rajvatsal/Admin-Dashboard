@@ -237,7 +237,7 @@ main h2 {
     font-size: 19px;
 }
 
-.your-projects div:not(.content) {
+.your-projects div:not(.content) {  /*Cards*/
     box-sizing: border-box;
     height: 150px;
     border-radius: 10px;
@@ -326,6 +326,9 @@ main h2 {
     }
     header {
         padding-left: 15px;
+    }
+.your-projects div:not(.content):hover { 
+    background-image: radial-gradient(circle at 100% 100%, #cbbaed99 1px, #2b1931c2 500px);
     }
 }
 
