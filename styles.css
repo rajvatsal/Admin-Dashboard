@@ -254,7 +254,7 @@ main h2 {
     transform: scale(1.09);
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
-    background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #cbbaed99 1px, #2b1931c2 500px);
+    background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #cbbaed99 1px, #2b1931c2 400px);
 }
 
 #page-links {
