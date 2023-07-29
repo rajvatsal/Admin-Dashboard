@@ -324,11 +324,18 @@ main h2 {
     input#site_search {
         margin-right: 0px;
     }
+
     header {
         padding-left: 15px;
     }
-.your-projects div:not(.content):hover { 
-    background-image: radial-gradient(circle at 100% 100%, #cbbaed99 1px, #2b1931c2 500px);
+
+    .your-projects div:not(.content):hover {
+        background-image: radial-gradient(circle at 100% 100%, #cbbaed99 1px, #2b1931c2 500px);
+    }
+
+    .your-projects div:not(.content) {
+        background-image: radial-gradient(circle at 100% 100%, #cbbaed22 4px, #2b1931c2 400px)
+            /* 520px gives the same effect as the mask gave*/
     }
 }
 
