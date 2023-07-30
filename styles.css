@@ -237,7 +237,7 @@ main h2 {
     font-size: 19px;
 }
 
-.your-projects div:not(.content) {
+.your-projects div:not(.content) {  /*Cards*/
     box-sizing: border-box;
     height: 150px;
     border-radius: 10px;
@@ -247,14 +247,15 @@ main h2 {
     flex-direction: column;
     position: relative;
     transition: all 100ms ease-in-out;
-    background-image: radial-gradient(circle at 100% 100%, #cbbaed22 4px, #2b1931c2 400px) /* 520px gives the same effect as the mask gave*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.336);
+    background-image: radial-gradient(circle at 100% 100%, #cbbaed22 4px, #2b1931c2 500px) /* 520px gives the same effect as the mask gave*/
 }
 
 .your-projects div:not(.content):hover {
     transform: scale(1.09);
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.336);
-    background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #cbbaed99 1px, #2b1931c2 500px);
+    background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #cbbaed99 1px, #2b1931c2 400px);
 }
 
 #page-links {
@@ -273,6 +274,16 @@ main h2 {
     padding: 10px 20px;
     border: 2px solid var(--primary-color);
     border-radius: var(--border-radius);
+}
+
+.trending>.content>div {
+    display: grid;
+    grid-template: auto / auto 1fr
+}
+
+.trending img {
+    width: 45px;
+    padding: 0 10px;
 }
 
 .side-panel-main {
@@ -324,6 +335,7 @@ main h2 {
     input#site_search {
         margin-right: 0px;
     }
+
     header {
         padding-left: 15px;
     }
