@@ -12,6 +12,7 @@
     <h2> I am planning to add the following in the future.</h2>
         <ul>
             <li><s>Fully functioning Spotlight effect.</s></li>
+            <li>Add light theme</li>
             <li>Search utility</li>
             <li>Ability to see your login info</li>
             <li>Tabs on Dashboard actually link to something</li>
